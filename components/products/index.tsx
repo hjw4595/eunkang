@@ -1,11 +1,11 @@
 import react from 'react';
 
-function Footer(){
+function Products(){
     return (
         <div>
-            footer
+            제품
         </div>
     )
 }
 
-export default Footer
+export default Products

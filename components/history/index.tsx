@@ -1,11 +1,11 @@
 import react from 'react';
 
-function Footer(){
+function History(){
     return (
         <div>
-            footer
+            회사 히스토리
         </div>
     )
 }
 
-export default Footer
+export default History

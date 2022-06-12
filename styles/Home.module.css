@@ -10,7 +10,8 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: #AD8B73;
+  background-color: #141E27;
+  color: white;
 }
 
 .main {
@@ -21,6 +22,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #EEEDDE;
 }
 
 .footer {
@@ -30,7 +32,8 @@
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
-  background-color: #AD8B73;
+  background-color: #141E27;
+  color: white;
 }
 
 .footer a {
