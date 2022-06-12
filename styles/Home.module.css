@@ -1,9 +1,20 @@
 .container {
-  padding: 0 2rem;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex: 1;
+  height: 4rem;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+  background-color: #AD8B73;
 }
 
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh - 12rem);
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -15,10 +26,11 @@
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
+  height: 8rem;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
+  background-color: #AD8B73;
 }
 
 .footer a {
