@@ -1,11 +1,7 @@
-import react from 'react';
+import react from "react";
 
-function Company(){
-    return (
-        <div className='company'>
-            회사 소개
-        </div>
-    )
+function Company() {
+  return <div className="company">회사 소개</div>;
 }
 
-export default Company
+export default Company;
