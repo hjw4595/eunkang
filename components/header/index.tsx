@@ -1,26 +1,16 @@
+import Link from "next/link";
 import react, { useRef, useState } from "react";
 import styled from "styled-components";
 
-import { useScroll } from "../../hooks/scroll";
-
 function Header() {
-  const valueY = useScroll();
-  const onClick = () => {
-    console.log(valueY);
-  };
-
   return (
     <Container>
       <div>logo</div>
       <Nav>
-        <div onClick={onClick}>회사</div>
-        <div>회사정보</div>
-        <div>제품1</div>
-        <div>제품2</div>
-        <div>제품3</div>
-        <div>제품4</div>
-        <div>제품5</div>
-        <div>제품6</div>
+        <div>
+          <Link href="/company">회사소개</Link>
+        </div>
+        <div>홈</div>
       </Nav>
     </Container>
   );
@@ -34,12 +24,16 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
-  color: white;
 `;
 const Nav = styled.div`
   display: flex;
   & > div {
     margin-right: 1rem;
     cursor: pointer;
+    color: white;
+    & > a {
+      color: white;
+      text-decoration: none;
+    }
   }
 `;

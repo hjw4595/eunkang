@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import styled from "styled-components";
 
-import Company from "../components/company";
-import History from "../components/history";
 import Products from "../components/products";
 import HeaderContents from "../components/header";
+import Category from "../components/category";
+import Intro from "../components/Intro";
 
 const Home: NextPage = () => {
   return (
@@ -14,11 +14,11 @@ const Home: NextPage = () => {
       </Header>
 
       <Contents>
-        <Intro>
-          <Company />
-          <History />
-        </Intro>
-        <Products />
+        <Intro />
+        <ProductsWrapper>
+          <Category />
+          <Products />
+        </ProductsWrapper>
       </Contents>
 
       <Footer>회사정보</Footer>
@@ -42,10 +42,17 @@ const Header = styled.div`
 
 const Contents = styled.div`
   display: flex;
+  height: calc(100vh - 12.2rem);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #eeedde;
+  & > :first-child {
+    margin-bottom: 2rem;
+  }
+`;
+
+const ProductsWrapper = styled.div`
+  display: flex;
 `;
 
 const Footer = styled.div`
@@ -55,8 +62,4 @@ const Footer = styled.div`
   align-items: center;
   border-top: 1px solid #eaeaea;
   background-color: #203239;
-`;
-
-const Intro = styled.div`
-  display: flex;
 `;
