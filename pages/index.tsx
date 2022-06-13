@@ -14,8 +14,10 @@ const Home: NextPage = () => {
       </Header>
 
       <Contents>
-        <Company />
-        <History />
+        <Intro>
+          <Company />
+          <History />
+        </Intro>
         <Products />
       </Contents>
 
@@ -34,15 +36,12 @@ const Header = styled.div`
   display: flex;
   height: 4rem;
   border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-  background-color: #141e27;
+  background-color: #203239;
+  z-index: 999;
 `;
 
 const Contents = styled.div`
-  min-height: calc(100vh - 12rem);
   display: flex;
-  padding: 4rem 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -55,5 +54,9 @@ const Footer = styled.div`
   justify-content: center;
   align-items: center;
   border-top: 1px solid #eaeaea;
-  background-color: #141e27;
+  background-color: #203239;
+`;
+
+const Intro = styled.div`
+  display: flex;
 `;

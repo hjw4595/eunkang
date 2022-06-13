@@ -8,9 +8,6 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         border: none;
     }
-    ::-webkit-scrollbar {
-        display: none;
-    }
     html{
         font-size: 11px;
         -webkit-text-size-adjust: none;
@@ -19,11 +16,9 @@ export const GlobalStyle = createGlobalStyle`
         ${device.desktop}{
             font-size: 10px;
         }
-        -ms-overflow-style: none;
-        scrollbar-width: none;
     }
     button {
-        background: none;
+        background: none; 
         padding: 0;
         border: none;
         cursor: pointer;
